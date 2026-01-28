@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>nhóm Quốc anh đẹp trai</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #333;
+}
+header {
+  background: #ff9800;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background: #e67e22;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover { color: #ffe082; }
+section { padding: 30px; max-width: 1000px; margin: auto; }
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-item {
+  width: 220px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+ .menu-item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .info {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .menu-item:hover .info {
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+.menu-item:hover { transform: translateY(-5px); }
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+.menu-item h3 { margin: 10px 0; color: #e74c3c; }
+.price { font-weight: bold; color: #27ae60; }
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  margin-top: 15px;
+  width: 100%;
+  background: #27ae60;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+form button:hover { background: #2ecc71; }
+.promo {
+  background: #fff3e0;
+  border-left: 5px solid #ff9800;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+#contact {
+  background: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🍹 Quốc Anh Nước Ép 🍹</h1>
+  <p>Ép từ trái cây tươi mỗi ngày – ngon, sạch, bổ dưỡng</p>
+</header>
+
+<nav>
+  <a href="#menu">Menu</a>
+  <a href="#order">Đặt hàng</a>
+  <a href="#promo">Khuyến mãi</a>
+  <a href="#contact">Liên hệ</a>
+</nav>
+
+<section id="menu">
+  <h2>Menu nước ép</h2>
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="https://res.cloudinary.com/dsqh4hl2h/image/upload/f_webp,q_auto/v1673290274/reviet/library/1-0-1-2-3-4-5-6-7-8-9-10-11.png" alt="Nước cam ép">
+      <h3>Nước cam ép</h3>
+      <p class="price">15.000 VNĐ</p>
+      <div class="info">🍊 Giàu vitamin C, tăng sức đề kháng, đẹp da.</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://phunuvietnam.mediacdn.vn/179072216278405120/2022/9/27/nuoc-ep-thom-bao-nhieu-calo-16642474876571865624983.jpg" alt="Nước ép thơm">
+      <h3>Nước ép thơm</h3>
+      <p class="price">13.000 VNĐ</p>
+      <div class="info">🍍 Hỗ trợ tiêu hóa, giảm viêm, tốt cho da.</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2024/11/5/nuoc-ep-tao-1-17307923826842105806077.jpg" alt="Nước ép táo">
+      <h3>Nước ép táo</h3>
+      <p class="price">16.000 VNĐ</p>
+      <div class="info">🍎 Giàu chất chống oxy hóa, tốt cho tim mạch.</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://dayphache.edu.vn/wp-content/uploads/2020/05/nuoc-ep-le-co-mau-vang.jpg" alt="Nước ép lê">
+      <h3>Nước ép lê</h3>
+      <p class="price">19.000 VNĐ</p>
+      <div class="info">🍐 Thanh nhiệt, lợi tiểu, hỗ trợ giảm cân.</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://cdn.tgdd.vn/Files/2020/05/10/1254757/3-cach-lam-nuoc-ep-nho-ngon-bo-duong-tot-cho-suc-k-16-760x367.jpg" alt="Nước ép nho đỏ">
+      <h3>Nước ép nho đỏ</h3>
+      <p class="price">20.000 VNĐ</p>
+      <div class="info">🍇 Tốt cho tim mạch, chống lão hóa, tăng năng lượng.</div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="order">
+  <h2>Đặt hàng nhanh</h2>
+  <form>
+    <label>Chọn món:</label>
+    <select id="mon" onchange="updateTotal()">
+      <option value="15000">Nước cam ép 15K</option>
+      <option value="13000">Nước ép thơm 13K</option>
+      <option value="16000">Nước ép táo 16K</option>
+      <option value="19000">Nước ép lê 19K</option>
+      <option value="20000">Nước ép nho đỏ 20K</option>
+    </select>
+
+    <label>Mix thêm vị:</label>
+    <select id="mix" onchange="updateTotal()">
+      <option value="0">Không</option>
+      <option value="5000">Mix thêm cam 5K</option>
+      <option value="4000">Mix thêm thơm 4K</option>
+      <option value="6000">Mix thêm táo 6K</option>
+      <option value="10000">Mix thêm nho đỏ 10K</option>
+    </select>
+
+    <label>Số lượng:</label>
+    <input type="number" id="so-luong" min="1" value="1" oninput="updateTotal()" />
+
+    <p><strong>Tổng tiền: </strong><span id="tong-tien">0</span> VNĐ</p>
+
+    <label>Tên người nhận:</label>
+    <input type="text" id="ten" placeholder="Nhập tên..." required />
+
+    <label>Số điện thoại:</label>
+    <input type="tel" id="sdt" placeholder="09xx xxx xxx" required />
+
+    <label>Địa chỉ giao hàng:</label>
+    <input type="text" id="dia-chi" placeholder="Số nhà, đường, phường, quận" required />
+
+    <button type="submit">Đặt hàng ngay</button>
+  </form>
+</section>
+
+<section id="promo" class="promo">
+  <h3>🎉 Khuyến mãi hôm nay 🎉</h3>
+  <p><strong>Mua 3 tặng 1</strong> áp dụng cho cam, thơm, táo.</p>
+    <h3>🎉 Khuyến mãi mua tại quán 🎉</h3>
+    <p><strong>Tích điễm</strong> 5 điễm 1 ly tùy chọn </p>
+  <p>Thời gian: 10:00–20:00, giao nhanh khu vực Song Phú.</p>
+</section>
+
+<section id="contact">
+  <h2>Liên hệ & địa chỉ</h2>
+  <p>📞 Hotline: <strong>0986802449</strong></p>
+  <p>📧 Email: <strong>qanh4641@gmail.com</strong></p>
+  <p>📍 Địa chỉ cửa hàng: kế xã Phú Thịnh cũ</p>
+  <p>🕒 Giờ mở cửa: 8:00–21:00 mỗi ngày</p>
+</section>
+
+<script>
+function updateTotal() {
+  let mon = parseInt(document.getElementById("mon").value);
+  let mix = parseInt(document.getElementById("mix").value);
+  let soLuong = parseInt(document.getElementById("so-luong").value);
+  let tong = (mon + mix) * soLuong;
+  document.getElementById("tong-tien").innerText = tong.toLocaleString();
+}
+updateTotal();
+</script>
+
+</body>
+</html>
+
